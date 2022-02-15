@@ -1,0 +1,205 @@
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+  }
+body{
+    background-color: #73B1B3;
+}
+.banner{
+    width: 100%;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 2em;
+    background-image: linear-gradient(0deg,rgba(115, 177, 179, 0.5) ,  rgba(115, 177, 179, 0.5)), url("/images/Screenshot\ 2022-02-13\ 232347.png");
+    color: white;
+
+    
+}
+form label{
+    font-size: 25px;
+}
+.form-container{
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#weatherInput{
+    font-size: 20px;
+    border: none;
+}
+#weatherSubmit{
+    background-color: #D9D9D9;
+    color: white;
+    border: none;
+    width: 80px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+
+
+.page{
+    width: 100%;
+}
+.forecastResults{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+    
+}
+.forecastContainer{
+    color: white;
+    height: 9.5em;
+    width: 8em;
+    margin-bottom: 2em;
+    border-left: solid white 1px;
+    border-right: solid white 1px;
+    
+}
+.forecastContainer h2{
+    font-size: 18px;
+}
+
+.forecast-date{
+    text-align: center;
+}
+
+.forecast-weather{
+    height: 4em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.forecast-weather img{
+    height: 4em;
+    width: 4em;
+    
+}
+.current-weather-container{
+    width: 60%;
+    height: 15em;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5),  rgba(0, 0, 0, 0.5));;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.curr-title{
+    height: 3em;
+    width:100%;
+    text-align: center;
+}
+.curr-title h1{
+    font-size: 40px;
+}
+
+.curr-weather{
+    height:8em;
+    width:70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.curr-weather img{
+    height: 6em;
+    width: 6em;
+}
+.curr-weather-main{
+ width: 100%;
+ height: 4em;
+ display: flex;
+ justify-content: space-around;
+}
+.curr-weather-descriptions{
+    width: 100%;
+    height: 15px;
+
+}
+.curr-weather-range{
+    width: 100%;
+    height: 15px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.curr-sun{
+    height:8em;
+    width:30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    text-align: left;
+}
+
+.weather-data{
+    width: 100%;
+    height: 20px;
+    padding: 0px;
+    margin: 0px;
+
+}
+.Contact{
+    list-style: none;
+    text-decoration: none;
+}
+.Contact a{
+    text-decoration: none;
+    color: #D9D9D9;
+}
+
+  /* Mobile Styles */
+  @media only screen and (max-width: 500px) {
+    .forecastContainer{
+        height: 15em;
+        width: 12em;
+    }
+    .form-container{
+        width: 100%;
+    }
+    .current-weather-container{
+        width: 100%;
+    }
+    .curr-weather-range h2{
+        font-size: 15px;
+    }
+    .weather-data{
+        font-size: 12px;
+    }
+  
+  }
+  
+  /* Tablet Styles */
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    .forecastContainer{
+        height: 15em;
+        width: 12em;
+        
+    }
+    .current-weather-container{
+        width: 100%;
+    }
+  
+
+  }
+  
+ /* Desktop Styles */
+@media only screen and (min-width: 961px) {
+.page {
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
